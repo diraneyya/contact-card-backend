@@ -2,10 +2,14 @@
 const express = require("express");
 const app = express();
 
-function rootHandler(request, response) {
-    response.send("<h1>I am upgrading my services!</h1>");
+function rootHandler(_, res) {
+  res.send({
+    first: "Orwa",
+    last: "Diraneyya",
+    twitter: "@ODiraneyya",
+  });
 }
 
-app.all("/", rootHandler);
+app.all("/api", rootHandler);
 
-app.listen(2500);
+app.listen(process.env.PORT || 2500);
