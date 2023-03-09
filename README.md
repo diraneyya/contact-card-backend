@@ -3,7 +3,7 @@
 This is an _ExpressJS_ application that serves a single GET endpoint (`/api`).
 
 The application is deployed on render, with the endpoint being accessible at the following URL:
-https://contactcard-backend.onrender.com/api
+https://contactcard-backend-1nj1.onrender.com/api
 
 The endpoint responds with a constant JSON object containing the following fields:
 - `first`: the first name of the person
